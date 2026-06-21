@@ -31,6 +31,38 @@ header .container {
     padding: 0px;
 }
 
+.language-switcher {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.language-switcher a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #faf7f7;
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.language-switcher a.active {
+  background: #faf7f7;
+  color: #333;
+}
+
+.language-switcher a:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
 header h1 {
     font-family: Lucida ;
     font-style: oblique;
@@ -537,9 +569,18 @@ footer {
 }
 
 .copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
     font-size: 12px;
     color: #f6f4f4;
     padding-left: 20px;
+}
+
+.copyright .vat {
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -574,7 +615,16 @@ footer {
   }
 
   .copyright {
+    flex-direction: row;
+    flex-wrap: nowrap;
     padding-left: 0;
+    font-size: 11px;
+    white-space: nowrap;
+    line-height: 1.4;
+  }
+
+  .copyright .vat {
+    white-space: nowrap;
   }
 }
 /*Footer style end*/
