@@ -191,5 +191,28 @@ setInterval(() => {
 //Fine btn-apertura
 
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const current = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".topnav a").forEach(link => {
+    if (link.getAttribute("href") === current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
 //FINE SCRIPT COMUNI
+
+
 
