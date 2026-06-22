@@ -461,8 +461,8 @@ header h1 {
 .social-links a {
     background-color: rgb(140, 193, 234);
     font-size: 30px;
-    height: 15px;
-    width: 15px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     padding: 20px;
     display: flex;
